@@ -26,8 +26,8 @@ public class Swagger2Config {
 
     private ApiInfo apiEndPointInfo() {
 
-        return new ApiInfoBuilder().title("Todos")
-                .description("Todo App")
+        return new ApiInfoBuilder().title("Zoos")
+                .description("Zoo App")
                 .contact(new Contact("Charles Johnson", "https://www.linkedin.com/in/charles-johnson-a9666913/", "charles.tha.doc@gmail.com"))
                 .license("MIT")
                 .licenseUrl("https://github.com/LambdaSchool/java-crudysnacks/blob/master/LICENSE")
