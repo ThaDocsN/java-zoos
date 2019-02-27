@@ -8,7 +8,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "zoo")
-public class Zoo {
+public class Zoos {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long zooid;
@@ -25,9 +25,8 @@ public class Zoo {
     @JsonIgnoreProperties("zoos")
     private Set<Animal> animals = new HashSet<>();
 
-    public Zoo() {
+    public Zoos() {
     }
-
     public long getZooid() {
         return zooid;
     }
