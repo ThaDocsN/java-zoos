@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Optional;
 
 public interface ZooRepository extends JpaRepository<Zoos, Long> {
-    public Optional<Zoos> findByZooname(String zooName);
+    public Optional<Zoos> findByZooName(String zooName);
 
     @Transactional
     @Modifying

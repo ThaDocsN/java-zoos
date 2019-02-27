@@ -28,7 +28,7 @@ public class ZooController {
 
     @GetMapping("/zoos/{name}")
     public Zoos getZooByName(@PathVariable String name){
-        var found = zooRepo.findByZooname(name);
+        var found = zooRepo.findByZooName(name);
         if(found.isPresent()){
             return found.get();
         }
